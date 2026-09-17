@@ -116,6 +116,14 @@
     });
   }
 
+  async function loadImageOriented(file) {
+    // Mantém retrato/paisagem conforme a orientação real gravada pela câmera.
+    if ('createImageBitmap' in window) {
+      try { return await createImageBitmap(file, { imageOrientation: 'from-image' }); } catch (_) {}
+    }
+    return loadImage(file);
+  }
+
   function canvasBlob(canvas, type, quality) {
     return new Promise((resolve, reject) => {
       canvas.toBlob(b => b ? resolve(b) : reject(new Error('Não foi possível converter a foto.')), type, quality);
@@ -123,7 +131,7 @@
   }
 
   async function processPhoto(file) {
-    const img = await loadImage(file);
+    const img = await loadImageOriented(file);
     const makeCanvas = maxDim => {
       const scale = Math.min(1, maxDim / Math.max(img.naturalWidth || img.width, img.naturalHeight || img.height));
       const w = Math.max(1, Math.round((img.naturalWidth || img.width) * scale));
