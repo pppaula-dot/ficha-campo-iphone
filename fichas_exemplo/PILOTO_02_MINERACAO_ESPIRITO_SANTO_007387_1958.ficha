@@ -1,0 +1,751 @@
+{
+  "schema_version": "1.0",
+  "file_type": "ficha_campo_importavel",
+  "template_id": "mineracao_es_007387_1958_2026",
+  "title": "FICHA DE ORIENTAÇÃO TÉCNICA DE LAVRA 2026",
+  "revision": "piloto-01",
+  "profile": "BRITA_CALCARIO_AMPLO",
+  "source": {
+    "filename": "MINERAÇÃO ESPIRITO SANTO- 007.387-58-FICHA DE ORIENTAÇÃO TÉCNICA DE LAVRA RM 2026 - CALCARIO.docx"
+  },
+  "enterprise": {
+    "company": "MINERAÇÃO ESPÍRITO SANTO",
+    "locality": "Alto Moledo - Itaóca",
+    "municipality": "Cachoeiro de Itapemirim-ES",
+    "processes": [
+      {
+        "type": "ANM",
+        "number": "007.387/1958"
+      }
+    ],
+    "license": "",
+    "utm": "",
+    "substance": "",
+    "use_options": [
+      "Brita",
+      "Calcário"
+    ]
+  },
+  "visit_header_fields": [
+    {
+      "id": "iema",
+      "label": "IEMA",
+      "type": "text"
+    },
+    {
+      "id": "date",
+      "label": "Data",
+      "type": "date"
+    },
+    {
+      "id": "substance",
+      "label": "Substância",
+      "type": "text"
+    },
+    {
+      "id": "use",
+      "label": "Uso",
+      "type": "multi_choice",
+      "options": [
+        "Brita",
+        "Calcário"
+      ]
+    },
+    {
+      "id": "responsible",
+      "label": "Responsável",
+      "type": "text"
+    },
+    {
+      "id": "recent_flight",
+      "label": "Vôo recente?",
+      "type": "single_choice",
+      "options": [
+        "Sim",
+        "Não"
+      ],
+      "companion_date": true
+    }
+  ],
+  "sections": [
+    {
+      "id": "acessos",
+      "number": "1",
+      "title": "ACESSOS",
+      "items": [
+        {
+          "id": "boas",
+          "text": "Boas condições de tráfego.",
+          "type": "checkbox"
+        },
+        {
+          "id": "regulares",
+          "text": "Regulares condições de tráfego.",
+          "type": "checkbox"
+        },
+        {
+          "id": "precaria",
+          "text": "Precária, não permitindo o acesso.",
+          "type": "checkbox"
+        },
+        {
+          "id": "nao_umidificados",
+          "text": "Não estavam e/ou são umidificados.",
+          "type": "checkbox"
+        },
+        {
+          "id": "largura_via",
+          "text": "Largura da(s) via(s) < 1,5x a largura do maior veículo.",
+          "type": "checkbox"
+        },
+        {
+          "id": "leira_baixa",
+          "text": "Leira com altura < 0,5x o diâmetro do pneu maior veículo.",
+          "type": "checkbox"
+        },
+        {
+          "id": "sem_baias",
+          "text": "Não existem pontos de ultrapassagem (baias).",
+          "type": "checkbox"
+        },
+        {
+          "id": "outro",
+          "label": "Outro",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "drenagem",
+      "number": "2",
+      "title": "SISTEMA DE DRENAGEM",
+      "items": [
+        {
+          "id": "bacia",
+          "label": "Bacia de decantação",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "calhas",
+          "label": "Calha(s) coletora(s)",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "caixas",
+          "label": "Caixas Secas",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "cordao",
+          "label": "Cordão de contorno",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "inclinacao",
+          "label": "Inclinação da Praça",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "leira",
+          "label": "Leira de Contenção",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "outro",
+          "label": "Outro",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ],
+          "allow_custom_label": true
+        }
+      ]
+    },
+    {
+      "id": "placa",
+      "number": "3",
+      "title": "DADOS DA PLACA DO EMPREENDIMENTO",
+      "items": [
+        {
+          "id": "rt",
+          "label": "RESPONSÁVEL TÉCNICO",
+          "type": "text",
+          "prefill": "ADROALDO JOSÉ SILVA DE MOURA"
+        },
+        {
+          "id": "crea",
+          "label": "CREA",
+          "type": "text",
+          "prefill": "PE-014786/D"
+        },
+        {
+          "id": "anm",
+          "label": "ANM",
+          "type": "text",
+          "prefill": "800.422/2011"
+        },
+        {
+          "id": "titulo",
+          "label": "TÍTULO",
+          "type": "text",
+          "prefill": "GUIA DE UTILIZAÇÃO N° 217/2024"
+        },
+        {
+          "id": "licenca",
+          "label": "LICENÇA",
+          "type": "text",
+          "prefill": "LO Nº 65/2023-SEMACE"
+        },
+        {
+          "id": "coords",
+          "label": "COORDENADAS",
+          "type": "text",
+          "prefill": "ACIMA"
+        },
+        {
+          "id": "obs",
+          "label": "Obs.",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "esteril",
+      "number": "4",
+      "title": "DEPÓSITO DE ESTÉREIS",
+      "items": [
+        {
+          "id": "frag_3m3",
+          "text": "Existem fragmentos de rocha com volume ≥ 3,0 m3.",
+          "type": "checkbox"
+        },
+        {
+          "id": "basculamento_sem_leira",
+          "text": "Área(s) de basculamento sem leira de contenção na(s) borda(s).",
+          "type": "checkbox"
+        },
+        {
+          "id": "basculamento_sem_sinal",
+          "text": "Área(s) de basculamento sem sinalização.",
+          "type": "checkbox"
+        },
+        {
+          "id": "sem_inclinacao_suave",
+          "text": "Não possui inclinação suave da borda para o interior (sentido da lavra e/ou sistema de drenagem).",
+          "type": "checkbox"
+        },
+        {
+          "id": "melhorar_contencao",
+          "text": "Instalar e/ou melhorar a contenção na base do depósito, a fim de evitar a dispersão dos estéreis.",
+          "type": "checkbox"
+        },
+        {
+          "id": "revegetar_inativas",
+          "text": "Cobrir a(s) parte(s) inativa(s) do(s) depósito(s) com solo e revegetar.",
+          "type": "checkbox"
+        },
+        {
+          "id": "muro_gravidade",
+          "text": "Existe muro de gravidade no final do depósito.",
+          "type": "checkbox"
+        },
+        {
+          "id": "sinalizacao_deposicao",
+          "text": "Há sinalização na área de deposição.",
+          "type": "checkbox"
+        },
+        {
+          "id": "solo_deposito",
+          "text": "Há presença de solo no depósito.",
+          "type": "checkbox"
+        },
+        {
+          "id": "aguas_pluviais",
+          "text": "Águas pluviais correm em sentido ao depósito.",
+          "type": "checkbox"
+        },
+        {
+          "id": "obs",
+          "label": "Obs.",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "frente",
+      "number": "5",
+      "title": "FRENTE DE LAVRA",
+      "items": [
+        {
+          "id": "epi_sucata",
+          "text": "EPI’s, sucatas e embalagens de insumos dispersos.",
+          "type": "checkbox"
+        },
+        {
+          "id": "fragmentos",
+          "text": "Fragmentos de rocha e/ou solo em grande quantidade na praça.",
+          "type": "checkbox"
+        },
+        {
+          "id": "epi",
+          "text": "Trabalhador(es) sem fazer uso adequado dos EPI’s",
+          "type": "checkbox"
+        },
+        {
+          "id": "cinto",
+          "text": "Trabalhador(es) em plano inclinado sem fazer uso adequado do cinto paraquedista.",
+          "type": "checkbox"
+        },
+        {
+          "id": "uv",
+          "text": "Não havia ou em quantidade insuficiente, proteção contra radiação UV (guarda-sol e/ou abrigo móvel).",
+          "type": "checkbox"
+        },
+        {
+          "id": "escadas",
+          "label": "Escada(s) em desacordo com as normas em",
+          "type": "multi_choice",
+          "options": [
+            "Bancadas(s)",
+            "Quadrote(s)",
+            "Plano inclinado"
+          ]
+        },
+        {
+          "id": "detonacao",
+          "label": "Área de detonação de rochas sem",
+          "type": "multi_choice",
+          "options": [
+            "isolamento",
+            "sinalização"
+          ]
+        },
+        {
+          "id": "anti",
+          "label": "Dispositivo anti-ricocheteamento ausente nas",
+          "type": "multi_choice",
+          "options": [
+            "Mangueira(s)",
+            "Linha(s) de distribuição"
+          ]
+        },
+        {
+          "id": "guardacorpo",
+          "label": "Guarda-corpo na(s) crista(s) da(s) bancada(s) em",
+          "type": "multi_choice",
+          "options": [
+            "Quantidade insuficiente",
+            "Inexistente"
+          ]
+        },
+        {
+          "id": "transito",
+          "text": "Ausência de placas de sinalização de trânsito no interior da mina.",
+          "type": "checkbox"
+        },
+        {
+          "id": "leiras",
+          "text": "Existência de leiras de contenção nas cristas das bancadas.",
+          "type": "checkbox"
+        },
+        {
+          "id": "outros",
+          "label": "Outros",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "equip",
+      "number": "6",
+      "title": "EQUIPAMENTOS",
+      "items": [
+        {
+          "id": "clima",
+          "text": "Não protegem os operadores da exposição ao sol, chuva e/ou a refrigeração da cabine não funciona.",
+          "type": "checkbox"
+        },
+        {
+          "id": "transporte",
+          "text": "Transporte irregular de pessoas em equipamento (escavadeira, carregadeira, caçamba, carroceira e etc.).",
+          "type": "checkbox"
+        },
+        {
+          "id": "cap_veloc",
+          "text": "Não têm indicação da capacidade de carga e/ou velocidade máxima no(s) seu(s) corpo(s).",
+          "type": "checkbox"
+        },
+        {
+          "id": "extintor_suporte",
+          "text": "Não possuem extintor de incêndio preso a um suporte devidamente fixado(s) no(s) seu(s) corpo(s).",
+          "type": "checkbox"
+        },
+        {
+          "id": "manut_local",
+          "text": "Manutenção realizada em local inadequado.",
+          "type": "checkbox"
+        },
+        {
+          "id": "vazamento",
+          "label": "Apresentava(m) vazamento(s) de óleo",
+          "type": "text_with_checkbox"
+        },
+        {
+          "id": "re",
+          "label": "Não emitia(m) sinalização sonora de marcha a ré",
+          "type": "text_with_checkbox"
+        },
+        {
+          "id": "moveis",
+          "label": "Parte(s) móvel(is) sem proteção",
+          "type": "text_with_checkbox"
+        },
+        {
+          "id": "pneus",
+          "label": "Pneus em más condições de uso",
+          "type": "text_with_checkbox"
+        },
+        {
+          "id": "obs",
+          "label": "Obs.",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "taludes",
+      "number": "7",
+      "title": "ESTABILIDADE DO(S) TALUDE(S)",
+      "items": [
+        {
+          "id": "cristas",
+          "text": "Fragmentos de rocha na(s) crista(s)",
+          "type": "checkbox"
+        },
+        {
+          "id": "soltos",
+          "text": "Fragmentos de rocha soltos no talude",
+          "type": "checkbox"
+        },
+        {
+          "id": "terroso",
+          "text": "Material terroso no topo",
+          "type": "checkbox"
+        },
+        {
+          "id": "negativa",
+          "text": "Inclinação negativa",
+          "type": "checkbox"
+        },
+        {
+          "id": "capeado",
+          "text": "Capeado solto",
+          "type": "checkbox"
+        },
+        {
+          "id": "escorregamento",
+          "text": "Risco de escorregamento",
+          "type": "checkbox"
+        },
+        {
+          "id": "fraturas",
+          "text": "Sistema de fraturas acentuado",
+          "type": "checkbox"
+        },
+        {
+          "id": "agua_fraturas",
+          "text": "Escoamento de água nas fraturas",
+          "type": "checkbox"
+        },
+        {
+          "id": "recalque",
+          "text": "Recalque observado na fratura",
+          "type": "checkbox"
+        },
+        {
+          "id": "novas_fraturas",
+          "text": "Surgimento de novas fraturas",
+          "type": "checkbox"
+        },
+        {
+          "id": "abertura",
+          "text": "Abertura das fraturas existentes",
+          "type": "checkbox"
+        },
+        {
+          "id": "outros",
+          "text": "Outros",
+          "type": "checkbox"
+        },
+        {
+          "id": "recomendacoes",
+          "label": "Recomendações",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "explosivos",
+      "number": "8",
+      "title": "EXPLOSIVOS",
+      "items": [
+        {
+          "id": "utiliza",
+          "label": "EXPLOSIVOS",
+          "type": "single_choice",
+          "options": [
+            "Utiliza",
+            "Não utiliza"
+          ],
+          "required": false
+        },
+        {
+          "id": "horarios",
+          "text": "Ausência de sinalização com os horários de desmonte.",
+          "type": "checkbox",
+          "visible_if": {
+            "utiliza": "Utiliza"
+          }
+        },
+        {
+          "id": "sirene",
+          "text": "Não havia sinalizador sonoro (sirene) na frente de lavra.",
+          "type": "checkbox",
+          "visible_if": {
+            "utiliza": "Utiliza"
+          }
+        },
+        {
+          "id": "sinal_previo",
+          "text": "Não se usa sinalização sonora antes de um desmonte.",
+          "type": "checkbox",
+          "visible_if": {
+            "utiliza": "Utiliza"
+          }
+        },
+        {
+          "id": "filmagem",
+          "text": "Não se realizava filmagem do desmonte.",
+          "type": "checkbox",
+          "visible_if": {
+            "utiliza": "Utiliza"
+          }
+        },
+        {
+          "id": "controle",
+          "text": "Não se realiza o controle de entrada e saída da mina.",
+          "type": "checkbox",
+          "visible_if": {
+            "utiliza": "Utiliza"
+          }
+        },
+        {
+          "id": "blaster",
+          "text": "Possui blaster para detonações.",
+          "type": "checkbox",
+          "visible_if": {
+            "utiliza": "Utiliza"
+          }
+        }
+      ]
+    },
+    {
+      "id": "paiois",
+      "number": "9",
+      "title": "PAIÓIS",
+      "items": [
+        {
+          "id": "possui",
+          "label": "PAIÓIS",
+          "type": "single_choice",
+          "options": [
+            "Possui",
+            "Não possui"
+          ]
+        },
+        {
+          "id": "controlados_fora",
+          "text": "Observado produtos controlados fora dos paióis",
+          "type": "checkbox",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        },
+        {
+          "id": "placas",
+          "text": "Ausência de placas indicativas.",
+          "type": "checkbox",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        },
+        {
+          "id": "extintor",
+          "label": "Extintor de incêndio",
+          "type": "multi_choice",
+          "options": [
+            "Sem",
+            "vencido"
+          ],
+          "visible_if": {
+            "possui": "Possui"
+          }
+        },
+        {
+          "id": "trancado",
+          "text": "Não estavam devidamente trancados.",
+          "type": "checkbox",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        },
+        {
+          "id": "raio5m",
+          "text": "Encontram-se desimpedidos em um raio mínimo de 5 m ao redor.",
+          "type": "checkbox",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        },
+        {
+          "id": "acessorios",
+          "text": "Explosivos armazenados com acessórios.",
+          "type": "checkbox",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        },
+        {
+          "id": "monitoramento",
+          "text": "Sistema de monitoramento sem funcionar.",
+          "type": "checkbox",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        },
+        {
+          "id": "vegetacao",
+          "text": "Encontram-se com vegetação no entorno.",
+          "type": "checkbox",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sinalizacao",
+      "number": "09",
+      "title": "SINALIZAÇÃO DE TRÂNSITO",
+      "items": [
+        {
+          "id": "placas",
+          "label": "Pontos de sinalização",
+          "type": "repeatable_table",
+          "columns": [
+            {
+              "id": "ponto",
+              "label": "PONTO DE REFERÊNCIA",
+              "type": "text"
+            },
+            {
+              "id": "placa",
+              "label": "PLACA",
+              "type": "text"
+            },
+            {
+              "id": "instalado",
+              "label": "INSTALADO",
+              "type": "single_choice",
+              "options": [
+                "Sim",
+                "Não"
+              ]
+            },
+            {
+              "id": "coordenadas",
+              "label": "COORDENADAS",
+              "type": "text"
+            }
+          ],
+          "min_rows": 0,
+          "max_rows": 30
+        }
+      ]
+    },
+    {
+      "id": "determinacoes",
+      "number": "10",
+      "title": "DETERMINAÇÕES",
+      "items": [
+        {
+          "id": "texto",
+          "label": "DETERMINAÇÕES",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "providencias",
+      "number": "11",
+      "title": "PROVIDÊNCIAS",
+      "items": [
+        {
+          "id": "texto",
+          "label": "PROVIDÊNCIAS",
+          "type": "long_text"
+        }
+      ]
+    }
+  ],
+  "signatures": [
+    {
+      "id": "tecnico",
+      "label": "Técnico",
+      "type": "signature_block"
+    },
+    {
+      "id": "recebido",
+      "label": "Recebido por",
+      "type": "signature_block"
+    }
+  ],
+  "notes": [],
+  "report_policy": {
+    "client_report": {
+      "include_current_visit_only": true,
+      "exclude_internal_history": true,
+      "photo_policy": "PENDENTE_DE_VALIDACAO_COM_ENGENHEIROS"
+    },
+    "preserve_source_wording": true
+  },
+  "storage_policy": {
+    "retain_data_on_app_update": true,
+    "update_must_be_non_destructive": true
+  }
+}

@@ -2,13 +2,14 @@
   "name": "Ficha Campo - Orientação Técnica de Lavra",
   "short_name": "Ficha Campo",
   "description": "Ficha de campo offline para acompanhamento de orientação técnica de lavra.",
-  "start_url": "./",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "orientation": "portrait-primary",
   "icons": [
-    {"src":"./icons/icon-180.png","sizes":"180x180","type":"image/png"}
+    {"src":"./icons/icon-192.png","sizes":"192x192","type":"image/png"},
+    {"src":"./icons/icon-512.png","sizes":"512x512","type":"image/png"}
   ]
 }

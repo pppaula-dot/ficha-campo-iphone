@@ -1,0 +1,307 @@
+{
+  "schema_version": "1.0",
+  "file_type": "ficha_campo_importavel",
+  "template_id": "transkl_896082_2017_2026",
+  "title": "FICHA DE ORIENTAÇÃO TÉCNICA DE LAVRA-2026",
+  "revision": "piloto-01",
+  "profile": "LAVRA_SIMPLIFICADA",
+  "source": {
+    "filename": "TRANSKL- 896.082-2017 - FICHA DE ORIENTAÇÃO TÉCNICA DE LAVRA.docx"
+  },
+  "enterprise": {
+    "company": "TRANSKL TRANSPORTE E COMÉRCIO LTDA.",
+    "locality": "CÓRREGO FORTUNA, DISTRITO DE URÂNIA",
+    "municipality": "ALFREDO CHAVES-ES",
+    "processes": [
+      {
+        "type": "DNPM",
+        "number": "896.082/2017"
+      }
+    ],
+    "utm": "",
+    "substance": "AREIA"
+  },
+  "visit_header_fields": [
+    {
+      "id": "date",
+      "label": "Data",
+      "type": "date"
+    },
+    {
+      "id": "foreman",
+      "label": "Encarregado",
+      "type": "text"
+    },
+    {
+      "id": "utm",
+      "label": "UTM",
+      "type": "text"
+    }
+  ],
+  "sections": [
+    {
+      "id": "acessos",
+      "number": "1",
+      "title": "ACESSOS",
+      "items": [
+        {
+          "id": "boas",
+          "text": "Boas condições de tráfego.",
+          "type": "checkbox"
+        },
+        {
+          "id": "regulares",
+          "text": "Regulares condições de tráfego.",
+          "type": "checkbox"
+        },
+        {
+          "id": "precaria",
+          "text": "Precária, não permitindo o acesso.",
+          "type": "checkbox"
+        },
+        {
+          "id": "nao_umidificados",
+          "text": "Não estavam e/ou são umidificados.",
+          "type": "checkbox"
+        },
+        {
+          "id": "largura_via",
+          "text": "Largura da(s) via(s) < 1,5x a largura do maior veículo.",
+          "type": "checkbox"
+        },
+        {
+          "id": "leira_baixa",
+          "text": "Leira com altura < 0,5x o diâmetro do pneu maior veículo.",
+          "type": "checkbox"
+        },
+        {
+          "id": "sem_baias",
+          "text": "Não existem pontos de ultrapassagem (baias).",
+          "type": "checkbox"
+        },
+        {
+          "id": "outro",
+          "label": "Outro",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "drenagem",
+      "number": "2",
+      "title": "SISTEMA DE DRENAGEM",
+      "items": [
+        {
+          "id": "bacia",
+          "label": "Bacia de decantação",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "calhas",
+          "label": "Calha(s) coletora(s)",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "caixas",
+          "label": "Caixas Secas",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "cordao",
+          "label": "Cordão de contorno",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "inclinacao",
+          "label": "Inclinação da Praça",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frente",
+      "number": "3",
+      "title": "FRENTE DE LAVRA",
+      "items": [
+        {
+          "id": "epi_suc",
+          "text": "EPI’s, sucatas e embalagens de insumos dispersos.",
+          "type": "checkbox"
+        },
+        {
+          "id": "epi",
+          "text": "Trabalhador(es) sem fazer uso adequado dos EPI’s.",
+          "type": "checkbox"
+        },
+        {
+          "id": "uv",
+          "text": "Não havia ou em quantidade insuficiente, proteção contra radiação UV (guarda-sol e/ou abrigo móvel).",
+          "type": "checkbox"
+        },
+        {
+          "id": "placas",
+          "text": "Ausência de placas de sinalização na pedreira.",
+          "type": "checkbox"
+        },
+        {
+          "id": "outro",
+          "label": "Outro",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "equip",
+      "number": "4",
+      "title": "EQUIPAMENTOS",
+      "items": [
+        {
+          "id": "clima",
+          "text": "Não protegem os operadores da exposição ao sol, chuva e/ou a refrigeração da cabine não funciona.",
+          "type": "checkbox"
+        },
+        {
+          "id": "transporte",
+          "text": "Transporte irregular de pessoas em equipamento (escavadeira, carregadeira, caçamba, carroceira e etc.).",
+          "type": "checkbox"
+        },
+        {
+          "id": "cap",
+          "text": "Não têm indicação da capacidade de carga e/ou velocidade máxima no(s) seu(s) corpo(s).",
+          "type": "checkbox"
+        },
+        {
+          "id": "ext",
+          "text": "Não possuem extintor de incêndio preso a um suporte devidamente fixado(s) no(s) seu(s) corpo(s).",
+          "type": "checkbox"
+        },
+        {
+          "id": "manut",
+          "text": "Manutenção realizada em local inadequado.",
+          "type": "checkbox"
+        },
+        {
+          "id": "oleo",
+          "label": "Apresentava(m) vazamento(s) de óleo",
+          "type": "text_with_checkbox"
+        },
+        {
+          "id": "som",
+          "label": "Não emitia(m) sinalização sonora",
+          "type": "text_with_checkbox"
+        },
+        {
+          "id": "moveis",
+          "label": "Parte(s) móvel(is) sem proteção",
+          "type": "text_with_checkbox"
+        },
+        {
+          "id": "pneus",
+          "label": "Pneus em más condições",
+          "type": "text_with_checkbox"
+        }
+      ]
+    },
+    {
+      "id": "taludes",
+      "number": "5",
+      "title": "ESTABILIDADE DO(S) TALUDE(S)",
+      "items": [
+        {
+          "id": "boas",
+          "text": "Boas condições",
+          "type": "checkbox"
+        },
+        {
+          "id": "neg",
+          "text": "Inclinação negativa",
+          "type": "checkbox"
+        },
+        {
+          "id": "capeado",
+          "text": "Capeado solto",
+          "type": "checkbox"
+        },
+        {
+          "id": "risco",
+          "text": "Risco de escorregamento",
+          "type": "checkbox"
+        },
+        {
+          "id": "rec",
+          "label": "Recomendações",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "obs",
+      "number": "6",
+      "title": "OBSERVAÇÕES / SUGESTÕES",
+      "items": [
+        {
+          "id": "texto",
+          "label": "OBSERVAÇÕES / SUGESTÕES",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "prov",
+      "number": "7",
+      "title": "PROVIDÊNCIAS IMEDIATAS",
+      "items": [
+        {
+          "id": "texto",
+          "label": "PROVIDÊNCIAS IMEDIATAS",
+          "type": "long_text"
+        }
+      ]
+    }
+  ],
+  "signatures": [
+    {
+      "id": "tecnico",
+      "label": "Técnico",
+      "type": "signature_block"
+    },
+    {
+      "id": "recebido",
+      "label": "Recebido por",
+      "type": "signature_block"
+    }
+  ],
+  "notes": [],
+  "report_policy": {
+    "client_report": {
+      "include_current_visit_only": true,
+      "exclude_internal_history": true,
+      "photo_policy": "PENDENTE_DE_VALIDACAO_COM_ENGENHEIROS"
+    },
+    "preserve_source_wording": true
+  },
+  "storage_policy": {
+    "retain_data_on_app_update": true,
+    "update_must_be_non_destructive": true
+  }
+}

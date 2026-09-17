@@ -1,0 +1,45 @@
+TESTE DE CAMPO — IPHONE v0.1
+
+1. Instalação
+- Abrir o endereço HTTPS no Safari.
+- Compartilhar > Adicionar à Tela de Início.
+- Fechar o Safari e abrir pelo ícone Ficha Campo.
+
+2. Fichas
+- Tocar Importar ficha.
+- Selecionar 1 arquivo .ficha ou o ZIP de fichas no app Arquivos/Google Drive.
+- Conferir Empresa, Processo e Referência/Frente quando houver.
+
+3. Preenchimento
+- Abrir alguns itens e marcar opções.
+- Digitar observação.
+- Testar ditado; se o botão não estiver disponível, usar o microfone do teclado do iPhone.
+
+4. Fotos
+- Adicionar foto geral de um item.
+- Adicionar foto em subitem/ponto quando a ficha possuir.
+- Marcar uma foto como “Incluir no relatório do cliente”.
+
+5. GPS
+- Usar “Capturar GPS” somente no campo/ponto que possuir esse botão.
+- Confirmar preenchimento E/N.
+
+6. Áudio
+- Gravar um áudio curto e parar a gravação.
+
+7. Offline
+- Depois que o app já tiver sido aberto/instalado, ativar modo avião.
+- Fechar e abrir o Ficha Campo pelo ícone.
+- Conferir se a ficha salva continua abrindo e permitindo preenchimento.
+
+8. Relatórios e arquivos
+- Gerar Interno — todas as fotos.
+- Gerar Cliente — sem fotos.
+- Gerar Cliente — fotos selecionadas.
+- Gerar Enviar fotos/áudios.
+- Gerar Enviar ficha completa.
+- No ZIP completo, conferir as pastas Dados, Relatorios, Fotos e Audios.
+
+IMPORTANTE
+- Não apagar o app da Tela de Início nem limpar dados do Safari/PWA antes de exportar o pacote completo da vistoria.
+- O iPhone não permite que uma PWA crie automaticamente uma pasta pública de Documentos a cada foto como o Android. Por isso, as mídias ficam protegidas no armazenamento do app até a exportação; no ZIP elas saem como arquivos individuais organizados por Item > Ponto.

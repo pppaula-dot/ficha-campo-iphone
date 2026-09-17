@@ -1,0 +1,532 @@
+{
+  "schema_version": "1.0",
+  "file_type": "ficha_campo_importavel",
+  "template_id": "toledo_896502_2014_2026",
+  "title": "FICHA DE ORIENTAÇÃO TÉCNICA DE LAVRA-2026",
+  "revision": "piloto-01",
+  "profile": "BRITA_BRITAGEM",
+  "source": {
+    "filename": "TOLEDO BRITAS- 896.502-14-FICHA DE ORIENTAÇÃO TÉCNICA DE LAVRA - BRITA(2).docx"
+  },
+  "enterprise": {
+    "company": "Toledo Ind. e Comércio de Britas LTDA.",
+    "locality": "Rodovia Barra de São Francisco x Mantena, km 05, s/nº",
+    "municipality": "B.S. F",
+    "processes": [
+      {
+        "type": "ANM",
+        "number": "896.502/2014"
+      }
+    ],
+    "utm": "",
+    "substance_options": [
+      "Brita",
+      "Calcário"
+    ]
+  },
+  "visit_header_fields": [
+    {
+      "id": "date",
+      "label": "Data",
+      "type": "date"
+    },
+    {
+      "id": "foreman",
+      "label": "Encarregado",
+      "type": "text"
+    },
+    {
+      "id": "substance",
+      "label": "Substância",
+      "type": "multi_choice",
+      "options": [
+        "Brita",
+        "Calcário"
+      ]
+    },
+    {
+      "id": "utm",
+      "label": "Coordenadas UTM",
+      "type": "coordinate_pair"
+    }
+  ],
+  "sections": [
+    {
+      "id": "acessos",
+      "number": "1",
+      "title": "ACESSOS",
+      "items": [
+        {
+          "id": "boas",
+          "text": "Boas condições de tráfego.",
+          "type": "checkbox"
+        },
+        {
+          "id": "reg",
+          "text": "Regulares condições de tráfego.",
+          "type": "checkbox"
+        },
+        {
+          "id": "prec",
+          "text": "Precária, não permitindo o acesso.",
+          "type": "checkbox"
+        },
+        {
+          "id": "recomendacoes",
+          "label": "Recomendações",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "drenagem",
+      "number": "2",
+      "title": "DRENAGEM",
+      "items": [
+        {
+          "id": "bacia",
+          "label": "Bacia de decantação",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "calhas",
+          "label": "Calha(s) coletora(s)",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "caixas",
+          "label": "Caixas Secas",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "cordao",
+          "label": "Cordão de contorno",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "inclinacao",
+          "label": "Inclinação da Praça",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "leira",
+          "label": "Leira de Contenção",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "outro",
+          "label": "Outro",
+          "type": "multi_choice",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ],
+          "allow_custom_label": true
+        }
+      ]
+    },
+    {
+      "id": "aparencia",
+      "number": "3",
+      "title": "APARÊNCIA GERAL (LIXO, SUCATAS, EMBALAGENS, EPI’S e ETC.)",
+      "items": [
+        {
+          "id": "boa",
+          "text": "A lavra se encontra em condições adequadas de limpeza e com boa aparência geral.",
+          "type": "checkbox"
+        },
+        {
+          "id": "residuos",
+          "text": "Armazenar os resíduos em local adequado (com piso impermeável e cobertura).",
+          "type": "checkbox"
+        },
+        {
+          "id": "fragmentos",
+          "text": "Não acumular fragmentos de rocha e/ou solo dispersos na frente de lavra.",
+          "type": "checkbox"
+        },
+        {
+          "id": "coleta",
+          "text": "Instalar pontos de coleta seletiva na área de intervenção do empreendimento.",
+          "type": "checkbox"
+        },
+        {
+          "id": "recolher",
+          "text": "Recolher lixo, sucatas, EPI’s e embalagens de insumos dispersos pela lavra.",
+          "type": "checkbox"
+        },
+        {
+          "id": "outro",
+          "label": "Outro",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "taludes",
+      "number": "4",
+      "title": "ESTABILIDADE DO(S) TALUDE(S)",
+      "items": [
+        {
+          "id": "blocos",
+          "text": "Blocos soltos",
+          "type": "checkbox"
+        },
+        {
+          "id": "isolar",
+          "text": "Isolar as bordas",
+          "type": "checkbox"
+        },
+        {
+          "id": "neg",
+          "text": "Inclinação negativa",
+          "type": "checkbox"
+        },
+        {
+          "id": "terroso",
+          "text": "Material terroso no topo",
+          "type": "checkbox"
+        },
+        {
+          "id": "corrimento",
+          "text": "Risco de corrimento",
+          "type": "checkbox"
+        },
+        {
+          "id": "outro1",
+          "label": "Outro",
+          "type": "text"
+        },
+        {
+          "id": "outro2",
+          "label": "Outro",
+          "type": "text"
+        },
+        {
+          "id": "rec",
+          "label": "Recomendações",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "equip",
+      "number": "5",
+      "title": "EQUIPAMENTOS (ESCAVADEIRA, PÁ-CARREGADEIRA E ETC.)",
+      "items": [
+        {
+          "id": "adequadas",
+          "text": "Encontram-se em condições adequadas.",
+          "type": "checkbox"
+        },
+        {
+          "id": "moveis",
+          "text": "Possuem partes móveis sem proteção.",
+          "type": "checkbox"
+        },
+        {
+          "id": "cap",
+          "text": "Não têm indicação da capacidade de carga e/ou velocidade máxima visível no corpo do(s) mesmo(s).",
+          "type": "checkbox"
+        },
+        {
+          "id": "clima",
+          "text": "Não protegem os operadores da exposição ao sol, chuva e/ou a refrigeração da cabine não funciona.",
+          "type": "checkbox"
+        },
+        {
+          "id": "sonora",
+          "label": "Não emitia(m) sinalização sonora",
+          "type": "text_with_checkbox"
+        },
+        {
+          "id": "oleo",
+          "label": "Realizar manutenção quanto ao vazamento de óleo",
+          "type": "text_with_checkbox"
+        },
+        {
+          "id": "outro",
+          "label": "Outro",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "britagem",
+      "number": "6",
+      "title": "BRITAGEM",
+      "items": [
+        {
+          "id": "moveis",
+          "text": "Partes móveis sem proteção.",
+          "type": "checkbox"
+        },
+        {
+          "id": "correias",
+          "text": "Não possui dispositivo de desligamento das correias nos locais de acesso de funcionários.",
+          "type": "checkbox"
+        },
+        {
+          "id": "umid",
+          "text": "Sistema de umidificação do(s) britador(es) e/ou peneiras sem funcionar.",
+          "type": "checkbox"
+        },
+        {
+          "id": "outro",
+          "label": "Outro",
+          "type": "text"
+        },
+        {
+          "id": "escadas",
+          "label": "Escada(s) Não possuem ou estão irregulares",
+          "type": "multi_choice",
+          "options": [
+            "Guarda-corpo",
+            "Rodapé",
+            "Espelho entre os degraus"
+          ]
+        },
+        {
+          "id": "passarelas",
+          "label": "Passarela(s) Não possuem ou estão irregulares",
+          "type": "multi_choice",
+          "options": [
+            "Guarda-corpo",
+            "Rodapé"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "explosivos",
+      "number": "7",
+      "title": "EXPLOSIVOS",
+      "items": [
+        {
+          "id": "utiliza",
+          "label": "EXPLOSIVOS",
+          "type": "single_choice",
+          "options": [
+            "Utiliza",
+            "Não utiliza"
+          ]
+        },
+        {
+          "id": "placas",
+          "text": "Ausência de placas indicando os horários das detonações.",
+          "type": "checkbox",
+          "visible_if": {
+            "utiliza": "Utiliza"
+          }
+        },
+        {
+          "id": "sirene",
+          "text": "Não havia sinalizador sonoro (sirene) na frente de lavra.",
+          "type": "checkbox",
+          "visible_if": {
+            "utiliza": "Utiliza"
+          }
+        },
+        {
+          "id": "pre",
+          "text": "Não se usou a sinalização sonora antes de um desmonte.",
+          "type": "checkbox",
+          "visible_if": {
+            "utiliza": "Utiliza"
+          }
+        },
+        {
+          "id": "film",
+          "text": "Não se realizava filmagem do desmonte.",
+          "type": "checkbox",
+          "visible_if": {
+            "utiliza": "Utiliza"
+          }
+        },
+        {
+          "id": "controle",
+          "text": "Não se realizava o controle de entrada e saída da pedreira.",
+          "type": "checkbox",
+          "visible_if": {
+            "utiliza": "Utiliza"
+          }
+        },
+        {
+          "id": "outro",
+          "label": "Outro",
+          "type": "text",
+          "visible_if": {
+            "utiliza": "Utiliza"
+          }
+        }
+      ]
+    },
+    {
+      "id": "paiois",
+      "number": "8",
+      "title": "PAIÓIS",
+      "items": [
+        {
+          "id": "possui",
+          "label": "PAIÓIS",
+          "type": "single_choice",
+          "options": [
+            "Possui",
+            "Não possui"
+          ]
+        },
+        {
+          "id": "placas",
+          "text": "Ausência de placas indicativas.",
+          "type": "checkbox",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        },
+        {
+          "id": "visual",
+          "text": "Bom aspecto visual.",
+          "type": "checkbox",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        },
+        {
+          "id": "tranca",
+          "text": "Não estavam devidamente trancados.",
+          "type": "checkbox",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        },
+        {
+          "id": "acess",
+          "text": "Explosivos armazenados com acessórios.",
+          "type": "checkbox",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        },
+        {
+          "id": "monitor",
+          "text": "Sistema de monitoramento sem funcionar.",
+          "type": "checkbox",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        },
+        {
+          "id": "outro",
+          "label": "Outro",
+          "type": "text",
+          "visible_if": {
+            "possui": "Possui"
+          }
+        }
+      ]
+    },
+    {
+      "id": "seguranca",
+      "number": "9",
+      "title": "SEGURANÇA DO TRABALHO",
+      "items": [
+        {
+          "id": "vias",
+          "text": "Melhorar sinalização das vias de acesso da pedreira.",
+          "type": "checkbox"
+        },
+        {
+          "id": "britagem",
+          "text": "Melhorar sinalização da britagem.",
+          "type": "checkbox"
+        },
+        {
+          "id": "anti",
+          "text": "Mangueira(s) e/ou linha(s) de distribuição de ar sem o dispositivo anti-ricocheteamento.",
+          "type": "checkbox"
+        },
+        {
+          "id": "vasos",
+          "text": "Vasos de pressão não possuem manômetro e válvula de alívio de pressão.",
+          "type": "checkbox"
+        },
+        {
+          "id": "epi",
+          "text": "Funcionário(s) sem fazer uso adequado dos EPI’s (óculos, capacete, protetor auricular, luvas e máscara).",
+          "type": "checkbox"
+        },
+        {
+          "id": "altura",
+          "text": "Funcionário(s) realizando trabalho em altura sem os EPI’s adequados.",
+          "type": "checkbox"
+        },
+        {
+          "id": "outro",
+          "label": "Outro",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "obs",
+      "number": "10",
+      "title": "OBSERVAÇÕES",
+      "items": [
+        {
+          "id": "texto",
+          "label": "OBSERVAÇÕES",
+          "type": "long_text"
+        }
+      ]
+    }
+  ],
+  "signatures": [
+    {
+      "id": "tecnico",
+      "label": "Técnico",
+      "type": "signature_block"
+    },
+    {
+      "id": "recebido",
+      "label": "Recebido por",
+      "type": "signature_block"
+    }
+  ],
+  "notes": [],
+  "report_policy": {
+    "client_report": {
+      "include_current_visit_only": true,
+      "exclude_internal_history": true,
+      "photo_policy": "PENDENTE_DE_VALIDACAO_COM_ENGENHEIROS"
+    },
+    "preserve_source_wording": true
+  },
+  "storage_policy": {
+    "retain_data_on_app_update": true,
+    "update_must_be_non_destructive": true
+  }
+}

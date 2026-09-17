@@ -1,0 +1,632 @@
+{
+  "schema_version": "1.0",
+  "file_type": "ficha_campo_importavel",
+  "template_id": "monte_douro_896328_2006_2026",
+  "title": "FICHA DE ORIENTAÇÃO TÉCNICA DE LAVRA",
+  "revision": "piloto-01",
+  "profile": "ACOMPANHAMENTO_DETALHADO",
+  "source": {
+    "filename": "MONTE D'OURO MINERAÇÃO-896.328-06-FICHA TÉCNICA DE LAVRA-2026.pdf"
+  },
+  "enterprise": {
+    "company": "MONTE D’OURO MINERAÇÃO LTDA",
+    "locality": "",
+    "municipality": "",
+    "processes": [
+      {
+        "type": "ANM",
+        "number": "896.328/2006"
+      }
+    ],
+    "front": "",
+    "technical_responsible": "GUSTAVO DO PRADO SIQUEIRA"
+  },
+  "visit_header_fields": [
+    {
+      "id": "fronts",
+      "label": "Frente(s)",
+      "type": "text"
+    },
+    {
+      "id": "date",
+      "label": "Data",
+      "type": "date"
+    }
+  ],
+  "sections": [
+    {
+      "id": "vias",
+      "number": "1",
+      "title": "VIAS DE ACESSO",
+      "items": [
+        {
+          "id": "condicao",
+          "label": "1.1 Condição de Trânsito",
+          "type": "single_choice",
+          "options": [
+            "Ótima",
+            "Regular",
+            "Precária"
+          ]
+        },
+        {
+          "id": "medidas",
+          "label": "1.2 Medidas a serem tomadas",
+          "type": "multi_choice",
+          "options": [
+            "Nova umectação",
+            "Manutenção",
+            "Corrigir erosão"
+          ]
+        },
+        {
+          "id": "dimensoes",
+          "label": "1.3 Dimensões do acesso da via",
+          "type": "multi_choice",
+          "options": [
+            "Satisfatória",
+            "Não existem/faltam pontos de ultrapassagem",
+            "Largura da via menor do que 1,5 vezes a largura do maior veículo",
+            "Leira com altura menor do que 0,5 vezes a largura do pneu do maior veículo"
+          ]
+        },
+        {
+          "id": "obs",
+          "label": "Observações",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "drenagem",
+      "number": "2",
+      "title": "SISTEMA DE DRENAGEM",
+      "items": [
+        {
+          "id": "bacia",
+          "label": "2.1 Bacia de decantação",
+          "type": "action_with_location",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "calhas",
+          "label": "2.2 Calha(s) Coletoras",
+          "type": "action_with_location",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "caixa",
+          "label": "2.3 Caixa Seca",
+          "type": "action_with_location",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "cordao",
+          "label": "2.4 Cordão de contorno",
+          "type": "action_with_location",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "inclinacao",
+          "label": "2.5 Inclinação da Praça",
+          "type": "action_with_location",
+          "options": [
+            "Manutenção",
+            "Implantar"
+          ]
+        },
+        {
+          "id": "obs",
+          "label": "Observações",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "esteril",
+      "number": "3",
+      "title": "DEPÓSITO DE ESTÉREIS",
+      "items": [
+        {
+          "id": "31",
+          "text": "3.1- Existência de fragmentos rochosos com volume de, ou superior a, 3 metros cúbicos.",
+          "type": "checkbox"
+        },
+        {
+          "id": "32",
+          "text": "3.2- Ausência de leira de contenção nas(s) borda(s) da(s) área(s) de basculamento.",
+          "type": "checkbox"
+        },
+        {
+          "id": "33",
+          "text": "3.3- Área de basculamento não sinalizada.",
+          "type": "checkbox"
+        },
+        {
+          "id": "34",
+          "text": "3.4- O depósito não possui inclinação suave da borda para o interior da lavra e/ou para o sistema de drenagem.",
+          "type": "checkbox"
+        },
+        {
+          "id": "35",
+          "text": "3.5- necessidade de instalar e/ou melhorar a contenção na base do depósito, visando evitar a dispersão dos estéreis.",
+          "type": "checkbox"
+        },
+        {
+          "id": "36",
+          "text": "3.6- Necessário cobrir a(s) parte(s) inativa(s) do(s) depósito(s) com solo e revegetá-las.",
+          "type": "checkbox"
+        },
+        {
+          "id": "obs",
+          "label": "Observações",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "frente",
+      "number": "4",
+      "title": "FRENTE DE LAVRA",
+      "items": [
+        {
+          "id": "41",
+          "text": "4.1- Requer limpeza de EPI’s, sucatas e embalagens de insumos dispersos na área",
+          "type": "checkbox"
+        },
+        {
+          "id": "42",
+          "text": "4.2- Identificado fragmento de rocha e/ou solo em grande quantidade na praça, requer limpeza.",
+          "type": "checkbox"
+        },
+        {
+          "id": "43",
+          "text": "4.3- Trabalhador(es) não utilizando adequadamente os EPI’s",
+          "type": "checkbox"
+        },
+        {
+          "id": "44",
+          "text": "4.4- Trabalhador(es) em plano inclinado sem fazer uso adequado do cinto paraquedista",
+          "type": "checkbox"
+        },
+        {
+          "id": "45",
+          "text": "4.5- Quantidade insuficiente de proteção contra radiação UV (guarda-sol e/ou abrigo móvel).",
+          "type": "checkbox"
+        },
+        {
+          "id": "46",
+          "text": "4.6- Escada(s) em desacordo com as normas de segurança",
+          "type": "checkbox"
+        },
+        {
+          "id": "47",
+          "label": "4.7- Corte por fio diamantado sendo feito sem",
+          "type": "multi_choice",
+          "options": [
+            "Isolamento",
+            "Sinalização"
+          ]
+        },
+        {
+          "id": "48",
+          "label": "4.8- Dispositivo anti-ricocheteamento ausente nas",
+          "type": "multi_choice",
+          "options": [
+            "Mangueiras",
+            "Linhas de distribuição"
+          ]
+        },
+        {
+          "id": "49",
+          "label": "4.9 Guarda-corpo na(s) crista(s) da(s) bancada(s) em",
+          "type": "multi_choice",
+          "options": [
+            "Quantidade Insuficiente",
+            "Inexistente"
+          ]
+        },
+        {
+          "id": "410",
+          "text": "4.10- Ausência de placas de sinalização na pedreira",
+          "type": "checkbox"
+        },
+        {
+          "id": "411",
+          "text": "4.11- Cabos-de-aço em más condições de serem utilizados",
+          "type": "checkbox"
+        },
+        {
+          "id": "412",
+          "label": "4.12- Outro(s)",
+          "type": "text"
+        },
+        {
+          "id": "obs",
+          "label": "Observações",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "seguranca",
+      "number": "5",
+      "title": "SEGURANÇA",
+      "items": [
+        {
+          "id": "51",
+          "text": "5.1- EPI’s não estão sendo utilizados corretamente/ não existe disponibilidade suficiente de EPI’s para os colaboradores;",
+          "type": "checkbox"
+        },
+        {
+          "id": "52",
+          "text": "5.2- Não Protegem os operadores da exposição ao sol, chuva e/ou a refrigeração da cabina não funciona;",
+          "type": "checkbox"
+        },
+        {
+          "id": "53",
+          "text": "5.3- Transporte irregular de colaboradores e/ou visitantes em equipamentos;",
+          "type": "checkbox"
+        },
+        {
+          "id": "54",
+          "text": "5.4- Veículos não possuem identificação da capacidade de carga e/ou velocidade máxima no(s) seu(s) corpo(s);",
+          "type": "checkbox"
+        },
+        {
+          "id": "55",
+          "text": "5.5- Veículos não possuem extintor de incêndio preso a um suporte devidamente fixado(s) no(s) seu(s) corpo(s);",
+          "type": "checkbox"
+        },
+        {
+          "id": "56",
+          "text": "5.6- Manutenção de veículos não está sendo realizada em local apropriado;",
+          "type": "checkbox"
+        },
+        {
+          "id": "57",
+          "text": "5.7- Veículos apresentam vazamento de óleo, necessitando de revisão/manutenção;",
+          "type": "checkbox"
+        },
+        {
+          "id": "58",
+          "text": "5.8- Veículos não emitem sinalização sonora;",
+          "type": "checkbox"
+        },
+        {
+          "id": "59",
+          "text": "5.9- Parte(s) móvel(is) dos veículos não apresentam proteção adequada;",
+          "type": "checkbox"
+        },
+        {
+          "id": "510",
+          "text": "5.10- Pneus em más condições.",
+          "type": "checkbox"
+        },
+        {
+          "id": "obs",
+          "label": "Observações",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "taludes",
+      "number": "6",
+      "title": "ESTABILIDADE DO(S) TALUDE(S)",
+      "items": [
+        {
+          "id": "condicao",
+          "label": "6.1- Condição do talude",
+          "type": "single_choice",
+          "options": [
+            "Ótima",
+            "Regular, mas carece monitoramento",
+            "Precária"
+          ]
+        },
+        {
+          "id": "riscos",
+          "label": "6.2 Riscos",
+          "type": "multi_choice",
+          "options": [
+            "Requer novo teste de estabilidade",
+            "Identificada instabilidade do maciço",
+            "Plantas topográficas do local desatualizadas",
+            "Presença de Fragmentos de rocha na(s) crista(s)",
+            "Material terroso no topo",
+            "Presença de água( superficial ou percolante)",
+            "Apresenta movimentação de extratos",
+            "Inclinação negativa",
+            "Falhas e/ou fraturas na face do talude",
+            "Capeado Solto",
+            "Risco de escorregamento",
+            "Necessário manter o monitoramento constante da face."
+          ]
+        },
+        {
+          "id": "obs",
+          "label": "Observações",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "explosivos",
+      "number": "7",
+      "title": "EXPLOSIVOS",
+      "items": [
+        {
+          "id": "atividade",
+          "label": "Existem atividades onde sejam utilizados materiais explosivos",
+          "type": "single_choice",
+          "options": [
+            "Sim",
+            "Não"
+          ]
+        },
+        {
+          "id": "711",
+          "text": "7.1.1- Horários de desmonte não estão sendo sinalizados;",
+          "type": "checkbox",
+          "visible_if": {
+            "atividade": "Sim"
+          }
+        },
+        {
+          "id": "712",
+          "text": "7.1.2- Não havia sinalizador sonoro (sirene) na frente de lavra;",
+          "type": "checkbox",
+          "visible_if": {
+            "atividade": "Sim"
+          }
+        },
+        {
+          "id": "713",
+          "text": "7.1.3- Não fora utilizada a sinalização sonora prévia ao desmonte;",
+          "type": "checkbox",
+          "visible_if": {
+            "atividade": "Sim"
+          }
+        },
+        {
+          "id": "714",
+          "text": "7.1.4- Ausência de filmagem do desmonte;",
+          "type": "checkbox",
+          "visible_if": {
+            "atividade": "Sim"
+          }
+        },
+        {
+          "id": "715",
+          "text": "7.1.5- Não é realizado o controle de entrada e saída dos explosivos da pedreira.",
+          "type": "checkbox",
+          "visible_if": {
+            "atividade": "Sim"
+          }
+        },
+        {
+          "id": "obs",
+          "label": "Observações",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "paiois",
+      "number": "8",
+      "title": "PAIÓIS",
+      "items": [
+        {
+          "id": "instalacoes",
+          "label": "Existem instalações de paióis na área",
+          "type": "single_choice",
+          "options": [
+            "Sim",
+            "Não"
+          ]
+        },
+        {
+          "id": "811",
+          "text": "8.1.1- Ausência de placas indicativas;",
+          "type": "checkbox",
+          "visible_if": {
+            "instalacoes": "Sim"
+          }
+        },
+        {
+          "id": "812",
+          "text": "8.1.2- Não possui Extintor de incêndio ou este se encontra vencido;",
+          "type": "checkbox",
+          "visible_if": {
+            "instalacoes": "Sim"
+          }
+        },
+        {
+          "id": "813",
+          "text": "8.1.3- O paiol não se encontra devidamente trancado;",
+          "type": "checkbox",
+          "visible_if": {
+            "instalacoes": "Sim"
+          }
+        },
+        {
+          "id": "814",
+          "text": "8.1.4- Necessário capinar num raio mínimo de 5 metros ao redor do paiól;",
+          "type": "checkbox",
+          "visible_if": {
+            "instalacoes": "Sim"
+          }
+        },
+        {
+          "id": "815",
+          "text": "8.1.5- Explosivos Foram armazenados com acessórios de detonação.",
+          "type": "checkbox",
+          "visible_if": {
+            "instalacoes": "Sim"
+          }
+        },
+        {
+          "id": "816",
+          "text": "8.1.6- Sistema de monitoramento se apresenta com falhas.",
+          "type": "checkbox",
+          "visible_if": {
+            "instalacoes": "Sim"
+          }
+        },
+        {
+          "id": "obs",
+          "label": "Observações",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "sinalizacao",
+      "number": "9",
+      "title": "SINALIZAÇÃO DE TRÂNSITO",
+      "items": [
+        {
+          "id": "placas",
+          "label": "Pontos de sinalização",
+          "type": "repeatable_table",
+          "columns": [
+            {
+              "id": "ponto",
+              "label": "Ponto de Referência",
+              "type": "text"
+            },
+            {
+              "id": "placa",
+              "label": "Placa",
+              "type": "text"
+            },
+            {
+              "id": "instalado",
+              "label": "Instalado",
+              "type": "single_choice",
+              "options": [
+                "Sim",
+                "Não"
+              ]
+            },
+            {
+              "id": "coordenadas",
+              "label": "Coordenadas",
+              "type": "text"
+            }
+          ],
+          "min_rows": 0,
+          "max_rows": 20
+        }
+      ]
+    },
+    {
+      "id": "emergenciais",
+      "number": "10",
+      "title": "MEDIDAS EMERGENCIAIS",
+      "items": [
+        {
+          "id": "texto",
+          "label": "MEDIDAS EMERGENCIAIS",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "curto",
+      "number": "11",
+      "title": "MEDIDAS A CURTO PRAZO",
+      "items": [
+        {
+          "id": "texto",
+          "label": "MEDIDAS A CURTO PRAZO",
+          "type": "long_text"
+        }
+      ]
+    },
+    {
+      "id": "previas",
+      "number": "12",
+      "title": "PROVIDÊNCIAS PRÉVIAS QUE DEVERÃO SER CONTINUADAS",
+      "items": [
+        {
+          "id": "texto",
+          "label": "PROVIDÊNCIAS PRÉVIAS QUE DEVERÃO SER CONTINUADAS",
+          "type": "long_text",
+          "internal_history_candidate": true
+        }
+      ]
+    },
+    {
+      "id": "cumprimento",
+      "number": "13",
+      "title": "CUMPRIMENTO DAS EXIGÊNCIAS PRÉVIAS E NOVAS RECOMENDAÇÕES (REPRESENTANTE TÉCNICO)",
+      "items": [
+        {
+          "id": "texto",
+          "label": "CUMPRIMENTO DAS EXIGÊNCIAS PRÉVIAS E NOVAS RECOMENDAÇÕES (REPRESENTANTE TÉCNICO)",
+          "type": "long_text",
+          "internal_history_candidate": true
+        }
+      ]
+    },
+    {
+      "id": "sugestoes",
+      "number": "14",
+      "title": "SUGESTÕES",
+      "items": [
+        {
+          "id": "texto",
+          "label": "SUGESTÕES",
+          "type": "long_text"
+        }
+      ]
+    }
+  ],
+  "signatures": [
+    {
+      "id": "filial",
+      "label": "Filial",
+      "type": "text"
+    },
+    {
+      "id": "rt",
+      "label": "Responsável técnico",
+      "type": "signature_block"
+    },
+    {
+      "id": "recebido",
+      "label": "Recebido Por",
+      "type": "signature_block"
+    }
+  ],
+  "notes": [
+    "As seções 12 e 13 são mantidas porque existem no documento-fonte. A política do app deve decidir o que é controle interno e o que entra no relatório do cliente.",
+    "Histórico interno do app nunca deve ser exportado automaticamente ao cliente."
+  ],
+  "report_policy": {
+    "client_report": {
+      "include_current_visit_only": true,
+      "exclude_internal_history": true,
+      "photo_policy": "PENDENTE_DE_VALIDACAO_COM_ENGENHEIROS"
+    },
+    "preserve_source_wording": true
+  },
+  "storage_policy": {
+    "retain_data_on_app_update": true,
+    "update_must_be_non_destructive": true
+  }
+}
