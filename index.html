@@ -15,7 +15,7 @@
 </style>
 </head>
 <body>
-<div id="top" class="top"><div><h1>Ficha Campo - Lavra</h1><div class="version">iPhone v0.2 — ajustes da V8 Android</div></div></div>
+<div id="top" class="top"><div><h1>Ficha Campo - Lavra</h1><div class="version">iPhone v0.2.1 — ajustes da V8 Android</div></div></div>
 <div id="app" class="wrap"></div>
 <div id="footer" class="footer hidden"></div>
 <script src="./pwa-bridge.js"></script>
@@ -26,7 +26,8 @@ const TODAY=()=>new Date().toISOString().slice(0,10);
 function fmtDate(v){const s=String(v||'').trim();if(!s)return'';let m=s.match(/^(\d{4})-(\d{2})-(\d{2})$/);if(m)return `${m[3]}/${m[2]}/${m[1]}`;m=s.match(/^(\d{2})[\/.-](\d{2})[\/.-](\d{4})$/);if(m)return `${m[1]}/${m[2]}/${m[3]}`;return s}
 function fmtDateDash(v){const s=fmtDate(v);return s||'—'}
 const TILE_LABELS={1:'Acessos',2:'Drenagem',3:'Placa',4:'Estéreis',5:'Lavra',6:'Equipamentos',7:'Taludes',8:'Explosivos',9:'Paióis',10:'Trânsito',11:'Determinações',12:'Providências'};
-function tileLabel(title,n){const u=String(title||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase();const pairs=[['ACESS','Acessos'],['DREN','Drenagem'],['PLACA','Placa'],['ESTER','Estéreis'],['FRENTE','Lavra'],['LAVRA','Lavra'],['EQUIP','Equipamentos'],['TALUD','Taludes'],['EXPLOS','Explosivos'],['PAIOL','Paióis'],['TRANSITO','Trânsito'],['SINALIZ','Sinalização'],['DETERMIN','Determinações'],['PROVID','Providências'],['RESIDU','Resíduos'],['CONTEN','Contenção']];for(const [k,v] of pairs)if(u.includes(k))return v;const cleaned=String(title||'').replace(/^\s*\d+\s*[-–—.:)]*\s*/,'').trim();return cleaned.split(/\s+/).filter(w=>!/^(DE|DA|DO|DAS|DOS|E|A|O|AS|OS)$/i.test(w))[0]||TILE_LABELS[n]||`Item ${n}`}
+function prettyTileLabel(v){const acr=new Set(['ANM','GPS','EPI','EPIS']);const s=String(v||'').trim().toLocaleLowerCase('pt-BR');return s.split(/\s+/).map((w,i)=>{const raw=w.replace(/[^A-Za-zÀ-ÿ]/g,'');if(acr.has(raw.toUpperCase()))return w.toUpperCase();return i===0?w.charAt(0).toLocaleUpperCase('pt-BR')+w.slice(1):w}).join(' ')}
+function tileLabel(title,n){const u=String(title||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toUpperCase();const pairs=[['ACESS','Acessos'],['DREN','Drenagem'],['PLACA','Placa'],['ESTER','Estéreis'],['FRENTE','Lavra'],['LAVRA','Lavra'],['EQUIP','Equipamentos'],['TALUD','Taludes'],['EXPLOS','Explosivos'],['PAIOL','Paióis'],['TRANSITO','Trânsito'],['SINALIZ','Sinalização'],['DETERMIN','Determinações'],['PROVID','Providências'],['RESIDU','Resíduos'],['CONTEN','Contenção']];for(const [k,v] of pairs)if(u.includes(k))return prettyTileLabel(v);const cleaned=String(title||'').replace(/^\s*\d+\s*[-–—.:)]*\s*/,'').trim();const first=cleaned.split(/\s+/).filter(w=>!/^(DE|DA|DO|DAS|DOS|E|A|O|AS|OS)$/i.test(w))[0]||TILE_LABELS[n]||`Item ${n}`;return prettyTileLabel(first)}
 const native=()=>!!(window.Android&&Android.takePhoto);
 const SECTION_NAMES={1:'ACESSOS',2:'SISTEMA DE DRENAGEM',3:'DADOS DA PLACA DO EMPREENDIMENTO',4:'DEPÓSITO DE ESTÉREIS',5:'FRENTE DE LAVRA',6:'EQUIPAMENTOS',7:'ESTABILIDADE DO(S) TALUDE(S)',8:'EXPLOSIVOS',9:'PAIÓIS',10:'SINALIZAÇÃO DE TRÂNSITO',11:'DETERMINAÇÕES',12:'PROVIDÊNCIAS'};
 const ACCESS=[
