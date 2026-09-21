@@ -166,8 +166,8 @@
 
   async function takePhoto(process, enterprise, visitId, cond, point, date) {
     try {
-      // Sem capture forçado: no iPhone o seletor oferece Câmera, Biblioteca de Fotos e Arquivos.
-      const files = await fileInput({ accept: 'image/*', multiple: false });
+      // Botão "Adicionar foto": solicita a câmera traseira diretamente em navegadores compatíveis.
+      const files = await fileInput({ accept: 'image/*', multiple: false, capture: 'environment' });
       if (!files.length) return callback('nativePhotoError', 'Seleção de foto cancelada.');
       const { blob, previewDataUrl } = await processPhoto(files[0]);
       const seq = mediaSeq('photo', visitId, cond, point);
