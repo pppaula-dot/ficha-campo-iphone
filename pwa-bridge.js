@@ -8,6 +8,17 @@
   let dbPromise = null;
   let audioSession = null;
 
+  function resetDb() {
+    const old = dbPromise;
+    dbPromise = null;
+    if (old) old.then(db => { try { db.close(); } catch (_) {} }).catch(() => {});
+  }
+
+  function isClosingDbError(e) {
+    const m = String(e?.message || e || '').toLowerCase();
+    return e?.name === 'InvalidStateError' || e?.name === 'TransactionInactiveError' || e?.name === 'AbortError' || m.includes('connection is closing') || m.includes('database connection is closing') || m.includes('closing');
+  }
+
   function openDb() {
     if (dbPromise) return dbPromise;
     dbPromise = new Promise((resolve, reject) => {
@@ -21,8 +32,14 @@
           s.createIndex('kind', 'kind', { unique: false });
         }
       };
-      req.onsuccess = () => resolve(req.result);
-      req.onerror = () => reject(req.error || new Error('Não foi possível abrir o armazenamento de mídias.'));
+      req.onsuccess = () => {
+        const db = req.result;
+        db.onversionchange = () => { try { db.close(); } catch (_) {} dbPromise = null; };
+        try { db.onclose = () => { dbPromise = null; }; } catch (_) {}
+        resolve(db);
+      };
+      req.onerror = () => { dbPromise = null; reject(req.error || new Error('Não foi possível abrir o armazenamento de mídias.')); };
+      req.onblocked = () => console.warn('Armazenamento de mídias temporariamente bloqueado.');
     });
     return dbPromise;
   }
@@ -34,18 +51,51 @@
     });
   }
 
+  async function withStore(mode, fn, retry = true) {
+    try {
+      const db = await openDb();
+      const tx = db.transaction(STORE, mode);
+      const done = new Promise((resolve, reject) => {
+        tx.oncomplete = () => resolve();
+        tx.onabort = () => reject(tx.error || new Error('Transação cancelada.'));
+        tx.onerror = () => {};
+      });
+      const value = await fn(tx.objectStore(STORE));
+      await done;
+      return value;
+    } catch (e) {
+      if (retry && isClosingDbError(e)) {
+        resetDb();
+        await new Promise(r => setTimeout(r, 80));
+        return withStore(mode, fn, false);
+      }
+      throw e;
+    }
+  }
+
   async function putMedia(rec) {
-    const db = await openDb();
-    const tx = db.transaction(STORE, 'readwrite');
-    await reqPromise(tx.objectStore(STORE).put(rec));
+    await withStore('readwrite', store => reqPromise(store.put(rec)));
     cache.set(rec.path, rec);
     return rec;
   }
 
   async function getAllMedia() {
-    const db = await openDb();
-    const tx = db.transaction(STORE, 'readonly');
-    return (await reqPromise(tx.objectStore(STORE).getAll())) || [];
+    return (await withStore('readonly', store => reqPromise(store.getAll()))) || [];
+  }
+
+  async function getMedia(path) {
+    const hit = cache.get(path);
+    if (hit) return hit;
+    const rec = await withStore('readonly', store => reqPromise(store.get(path)));
+    if (rec) cache.set(path, rec);
+    return rec || null;
+  }
+
+  async function deleteMedia(path) {
+    if (!path) return false;
+    await withStore('readwrite', store => reqPromise(store.delete(path)));
+    cache.delete(path);
+    return true;
   }
 
   async function loadCache() {
@@ -267,6 +317,42 @@
     return cache.get(path)?.previewDataUrl || '';
   }
 
+  async function rotateMedia(path, degrees) {
+    const rec = await getMedia(path);
+    if (!rec || rec.kind !== 'photo' || !rec.blob) throw new Error('Foto não encontrada no armazenamento.');
+    const deg = Number(degrees) || 0;
+    const normalized = ((deg % 360) + 360) % 360;
+    if (!normalized) return { size: rec.size || rec.blob.size || 0 };
+    const img = await loadImage(rec.blob);
+    const w = img.naturalWidth || img.width, h = img.naturalHeight || img.height;
+    const swap = normalized === 90 || normalized === 270;
+    const canvas = document.createElement('canvas');
+    canvas.width = swap ? h : w;
+    canvas.height = swap ? w : h;
+    const ctx = canvas.getContext('2d', { alpha: false });
+    ctx.fillStyle = '#fff';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.translate(canvas.width / 2, canvas.height / 2);
+    ctx.rotate(normalized * Math.PI / 180);
+    ctx.drawImage(img, -w / 2, -h / 2, w, h);
+    const blob = await canvasBlob(canvas, 'image/jpeg', 0.90);
+    const maxPreview = 1200;
+    const scale = Math.min(1, maxPreview / Math.max(canvas.width, canvas.height));
+    const pc = document.createElement('canvas');
+    pc.width = Math.max(1, Math.round(canvas.width * scale));
+    pc.height = Math.max(1, Math.round(canvas.height * scale));
+    const pctx = pc.getContext('2d', { alpha: false });
+    pctx.fillStyle = '#fff';
+    pctx.fillRect(0, 0, pc.width, pc.height);
+    pctx.drawImage(canvas, 0, 0, pc.width, pc.height);
+    rec.blob = blob;
+    rec.size = blob.size;
+    rec.previewDataUrl = pc.toDataURL('image/jpeg', 0.78);
+    rec.rotatedAt = new Date().toISOString();
+    await putMedia(rec);
+    return { size: rec.size };
+  }
+
   function networkType() {
     if (navigator.onLine === false) return 'none';
     const c = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
@@ -480,12 +566,10 @@
 
   async function deleteLicenseFiles(process, enterprise) {
     try {
-      const db = await openDb();
       const all = await getAllMedia();
       const targets = all.filter(r => String(r.process) === String(process) && (!enterprise || String(r.enterprise) === String(enterprise)));
       if (!targets.length) return;
-      const tx = db.transaction(STORE, 'readwrite');
-      for (const r of targets) { tx.objectStore(STORE).delete(r.path); cache.delete(r.path); }
+      for (const r of targets) await deleteMedia(r.path);
     } catch (_) {}
   }
 
@@ -500,6 +584,8 @@
     dictate,
     captureLocation,
     imageDataUrl,
+    rotateMedia,
+    deleteMedia,
     networkType,
     shareReport,
     shareArchive,
